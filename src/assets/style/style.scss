@@ -1,0 +1,135 @@
+@import './variables.scss';
+html,
+body #app {
+  color: #333333;
+  font-family: Arial, Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, sans-serif;
+  background-color: $background-color;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.mt10{ margin-top: 20px; }
+.phone-button{
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 11.733333vw;
+  margin: 0;
+  padding: 0;
+  font-size: 4.266667vw;
+  line-height: 11.733333vw;
+  text-align: center;
+  border-radius: 0.533333vw;
+  cursor: pointer;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+  vertical-align: bottom;
+  border: 0.2vw solid $primary-color;
+  background: #ffffff;
+  color: $primary-color;
+  padding: 0 4vw;
+  border-radius: $border-radius;
+  &.green {
+    border: 0.2vw solid $green-color;
+    color: $green-color;
+  }
+  &.purple{
+    border: 0.2vw solid $purple-color;
+    color: $purple-color;
+  }
+}
+.round-btns {
+  position: absolute;
+  right: 20px;
+  bottom: 13vw;
+  a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    border: 1px solid $primary-color;
+    font-size: 24px;
+    color: $primary-color;
+    margin-left: 10px;
+    cursor: pointer;
+    img{
+      width: 100%;
+      vertical-align: bottom;
+    }
+    &.green {
+      border-color: $green-color;
+      color: $green-color;
+    }
+    &.yellow {
+      border-color: $yellow-color;
+      color: $yellow-color;
+    }
+    &.blue {
+      border-color: $blue-color;
+      color: $blue-color;
+    }
+    &.purple{
+      border: 0.2vw solid $purple-color;
+      color: $purple-color;
+    }
+  }
+}
+.app-container {
+  height: 100%;
+  // padding-bottom: 44px;
+}
+.layout-content{
+  height: 100%;
+}
+.van-pull-refresh{
+  height: 100%;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --van-button-primary-border-color:#D4633B !important;
+  --van-button-primary-background: #D4633B !important;
+  --van-button-primary-color: #ffffff;
+
+  --van-nav-bar-background: #D4633B !important;
+  --van-nav-bar-title-text-color: #ffffff !important;
+  --van-nav-bar-icon-color: #ffffff !important;
+  --van-nav-bar-text-color:#ffffff !important;
+}
+// 文字颜色
+.pink { color: $pink-color; }
+.yellow { color: $yellow-color; }
+.red { color: $red-color; }
+.blue { color: $blue-color; }
+.purple { color: $purple-color; }
+.brown { color: $brown-color; }
+.green { color: $green-color; }
+.gray{ color: $gray-color; }
+
+.blod{ font-weight: bold; }
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
